@@ -1,11 +1,11 @@
 <template>
   <div>
     <component
-      v-for="(block, index) in page.blocks"
+      v-for="(block, index) in configpage['page01'].blocks"
       :key="index"
       :is="components[block.name]"
       v-bind="block"
-      :title="data.title"
+      :customData="block.data"
     >
     </component>
   </div>
@@ -16,22 +16,7 @@
     ComponentOne: resolveComponent('ComponentOne'),
     ComponentTwo: resolveComponent('ComponentTwo')
   }
-  
-  const page = {
-    blocks: [
-      {
-        name: "ComponentOne",
-        data: {
-          title: 'Componente 1'
-        }
-      },
-      {
-        name: "ComponentOne",
-        data: {
-          title: 'Componente 2'
-        }
-      }
-    ]
-  }
+
+  const { data: configpage } = await useFetch('http://127.0.0.1:5500/api/config.json', { pick: ['page01'] });
 
 </script>

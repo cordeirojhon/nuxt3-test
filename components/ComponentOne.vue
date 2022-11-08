@@ -1,26 +1,15 @@
-
 <template>
   <div>
-    Component: {{ foo }}
+    Component: component-one  {{customData.title}}
   </div>
 </template>
 <script lang="ts" setup>
-  import {ComponentObjectPropsOptions} from "vue";
-
   interface Props {
-    foo: string
-    bar?: number
+    customData: object
   }
 
-  const props = defineProps<ComponentObjectPropsOptions<Props>>({
-    foo: {
-      type: String, 
-      required: true,
-      validator(value: unknown): boolean {
-        return true
-      }
-    },
-    bar: Number
+  const props = withDefaults(defineProps<Props>(), {
+    customData: Object
   })
 </script>
 

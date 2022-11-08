@@ -1,0 +1,18 @@
+{
+    "page01": {
+        "blocks": [
+            {
+                "name": "ComponentTwo",
+                "data": {
+                    "title": "Componente 2"
+                }
+            },
+            {
+                "name": "ComponentOne",
+                "data": {
+                    "title": "Componente 1"
+                }
+            }
+        ]
+    }
+}
