@@ -2,15 +2,25 @@
     "page01": {
         "blocks": [
             {
-                "name": "ComponentTwo",
+                "name": "ComponentOne",
                 "data": {
-                    "title": "Componente 2"
+                    "title": "The Coldest Sunset",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+                    "image": {
+                        "url": "https://tailwindcss.com/img/card-top.jpg"
+                    },
+                    "style": "--custom-color-title: red; --custom-border-color: green"
                 }
             },
             {
-                "name": "ComponentOne",
+                "name": "ComponentTwo",
                 "data": {
-                    "title": "Componente 1"
+                    "title": "The Coldest Sunset",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+                    "image": {
+                        "url": "https://tailwindcss.com/img/card-top.jpg"
+                    },
+                    "style": "--custom-color-title: pink; --custom-border-color: green"
                 }
             }
         ]
