@@ -17,7 +17,7 @@
     ComponentTwo: resolveComponent('ComponentTwo')
   }
 
-  const { data: configpage } = await useFetch('http://127.0.0.1:5500/api/config.json', { pick: ['page01'] });
+  const { data: configpage } = await useFetch('http://127.0.0.1:3001/api/config.json', { pick: ['page01'] });
 
 </script>
 
@@ -25,4 +25,5 @@
   :root{
     --custom-color-title: red
   }
+  .custom-color-title{color: var(--custom-color-title)}
 </style>

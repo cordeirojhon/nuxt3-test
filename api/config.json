@@ -4,23 +4,23 @@
             {
                 "name": "ComponentOne",
                 "data": {
-                    "title": "The Coldest Sunset",
+                    "title": "two",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
                     "image": {
                         "url": "https://tailwindcss.com/img/card-top.jpg"
                     },
-                    "style": "--custom-color-title: red; --custom-border-color: green"
+                    "titleColor": "blue"
                 }
             },
             {
                 "name": "ComponentTwo",
                 "data": {
-                    "title": "The Coldest Sunset",
+                    "title": "titulo 2",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
                     "image": {
                         "url": "https://tailwindcss.com/img/card-top.jpg"
                     },
-                    "style": "--custom-color-title: pink; --custom-border-color: green"
+                    "titleColor": "green"
                 }
             }
         ]

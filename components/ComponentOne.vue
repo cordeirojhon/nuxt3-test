@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded overflow-hidden shadow-lg mb-4" :style="customData.style">
+  <div class="rounded overflow-hidden shadow-lg mb-4" :style="'--custom-color-title:'+ customData.titleColor ">
     <img
       class="w-full"
       :src="customData.image.url"
@@ -29,6 +29,3 @@
   })
 </script>
 
-<style scoped>
-  .custom-color-title{color: var(--custom-color-title)}
-</style>
